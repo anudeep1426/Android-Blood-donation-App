@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue2">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout">
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/fb_login_btn"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:layout_height="67dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:showDividers="middle"
+        android:divider="?android:attr/listDivider"
+        android:dividerPadding="4dp"
+        android:orientation="horizontal">
+
+    <Button
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:layout_weight="1"
+        android:id="@+id/login"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:padding="4dp"/>
+
+
+    <Button
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:padding="4dp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:id="@+id/register"/>
+    </LinearLayout>
+
+</RelativeLayout>

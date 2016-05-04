@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue1"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.chanti.blood.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:showDividers="middle"
+        android:layout_marginTop="50dp"
+        android:dividerPadding="4dp"
+        android:orientation="horizontal">
+
+
+
+        <Spinner
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/spinnerBloodGroup"
+            android:entries="@array/Blood_Group"/>
+        <EditText
+            android:layout_width="15dp"
+            android:layout_height="50dp"
+            android:hint="Enter City"
+            android:layout_weight="2"
+            android:textColorHint="@android:color/black"
+            style="?android:attr/editTextBackground"
+            android:id="@+id/city"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.75"
+            android:id="@+id/search"
+            android:onClick="searchDonors"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/search1"
+            android:textSize="16sp"
+            android:scaleType="centerInside"
+            android:padding="4dp"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:id="@+id/bloodDonorsList">
+    </ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/mapIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="300dp"
+        android:src="@drawable/ic_map"
+        app:elevation="10dp"
+        android:onClick="onClickMap"/>
+</android.support.design.widget.CoordinatorLayout>
+    <ListView
+        android:id="@+id/navList"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:background="#ffeeeeee"/>
+</android.support.v4.widget.DrawerLayout>

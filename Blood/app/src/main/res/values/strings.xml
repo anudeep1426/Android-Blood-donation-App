@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Blood</string>
+    <string name="action_settings">Settings</string>
+    <string name="profile">profile</string>
+    <string name="logout">logout</string>
+    <string name="maps_api_key" translatable="false">AIzaSyD9x3IzPzsW8Urq6kTajW0P6hzyIIkeTMk</string>
+    <string name="facebook_app_id">475218509341040</string>
+    <string name="register">Register</string>
+    <string name="address">(Address)</string>
+    <string name="mobile">Mobile</string>
+    <string name="password">Password</string>
+    <string name="username">User Name</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="use_current_location">Use Current Location</string>
+    <string name="donate_blood">Donate Blood...!!!</string>
+    <string name="save_lives">Save Lives...!!!</string>
+    <string name="login">Login</string>
+    <string name="login_page">Login Page</string>
+    <string name="user_name">User Name</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string-array name="Blood_Group" >
+        <item> BLOOD GROUP </item>
+        <item>A-</item>
+        <item>A+</item>
+        <item>AB-</item>
+        <item>AB+</item>
+        <item>B-</item>
+        <item>B+</item>
+        <item>O-</item>
+        <item>O+</item>
+    </string-array>
+</resources>

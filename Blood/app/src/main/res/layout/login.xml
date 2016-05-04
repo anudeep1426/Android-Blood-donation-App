@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editUserName"
+        android:hint="Mobile"
+        android:textSize="20dp"
+        android:padding="16dp"
+        android:text="8166829145"
+        android:inputType="phone"
+        android:textColorHint="@android:color/black"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="81dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:ems="10"
+        android:textSize="20dp"
+        android:text="mam"
+        android:textColorHint="@android:color/black"
+        android:padding="16dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="60dp"
+        android:id="@+id/editPassword"
+        android:layout_below="@+id/editUserName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/login"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_gravity="center" />
+
+    <Button
+        style="?android:buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:id="@+id/loginBtn"
+        android:onClick="onClickLogin"
+        android:layout_centerVertical="true"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/editPassword"
+        android:layout_alignStart="@+id/editPassword" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:id="@+id/register"
+        android:onClick="onClickRegister"
+        android:layout_alignTop="@+id/loginBtn"
+        android:background="@android:color/white"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/donate_blood"
+        android:textColor="@android:color/black"
+        android:id="@+id/textView2"
+        android:layout_marginTop="170dp"
+        android:layout_below="@+id/loginBtn"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/save_lives"
+        android:textColor="@android:color/black"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+</RelativeLayout>

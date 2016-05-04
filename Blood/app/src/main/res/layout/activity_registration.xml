@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/blue5"
+    android:layout_height="match_parent">
+    <!--android:background="@drawable/b9">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName"
+            android:hint="@string/first_name"
+            android:ems="10"
+            android:padding="16dp"
+            android:id="@+id/editFirstName"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/last_name"
+            android:ems="10"
+            android:padding="16dp"
+            android:id="@+id/editLastName"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editUserName"
+            android:hint="Email"
+            android:inputType="text"
+            android:padding="16dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:ems="10"
+            android:padding="16dp"
+            android:id="@+id/editPassword"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number|phone"
+            android:hint="@string/mobile"
+            android:maxLength="10"
+            android:ems="10"
+            android:id="@+id/editPhoneNumber"
+            android:padding="16dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerBloodGroup"
+            android:entries="@array/Blood_Group"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:hint="@string/address"
+            android:padding="16dp"
+            android:layout_marginTop="7dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawablePadding="4dp"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawableStart="@drawable/ic_location"
+            android:text="@string/use_current_location"
+            android:id="@+id/getAddressButton"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:onClick="register"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btnRegister"
+            android:layout_marginTop="70dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+</ScrollView>
